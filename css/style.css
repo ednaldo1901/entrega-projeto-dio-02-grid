@@ -1,0 +1,118 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+
+}
+
+body{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 10vh 90vh;
+    grid-template-columns: 15.14vw repeat(2,1fr);
+    grid-template-areas: "header header header" "sidebar main main" "sidebar main main ";
+    background-color: #F9F9F9;
+    
+}
+header{
+    grid-area: header;
+    background-color: #FFFFFF;
+}
+aside{
+    grid-area: sidebar;
+    background-color: #FFFFFF;
+
+}
+main{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+    padding: 16px;
+    gap: 16px;
+   justify-items: center;
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+img{
+   object-fit: cover;
+}
+.avatar{
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.menu-asidebar{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    padding: 24px;
+    text-align: start;
+    justify-content: center;
+}
+
+.menu-item{
+    display:inline-block;
+    margin-right: 10px;
+}
+.menu-item-01{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 0.875rem;
+}
+.menu-item-2{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.875rem;
+    line-height: 1rem;
+}
+
+.descrição{
+    align-items: center;
+    display: flex;
+    gap: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 0.875rem;
+    line-height: 1rem;
+    padding-right: 15px;
+
+    
+   
+}
+.logo-descrição{
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+}
+.descrição-02{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    
+
+}
